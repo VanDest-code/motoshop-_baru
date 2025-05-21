@@ -71,7 +71,7 @@ export default function ProductDetail({ product, similarProducts }: ProductDetai
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <div key={key} className="flex flex-col">
                     <span className="text-gray-500 text-sm capitalize">{key}</span>
-                    <span className="text-gray-300">{value}</span>
+                    <span className="text-gray-300">{String(value)}</span>
                   </div>
                 ))}
               </div>
